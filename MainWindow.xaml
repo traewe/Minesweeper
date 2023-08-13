@@ -1,0 +1,18 @@
+﻿<Window x:Class="WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF"
+        xmlns:col="clr-namespace:System.Collections;assembly=mscorlib"
+        mc:Ignorable="d" 
+        Title="Program" Height="350" Width="350" WindowStyle="ThreeDBorderWindow">
+    <StackPanel x:Name="mainStackPanel" VerticalAlignment="Center" HorizontalAlignment="Center">
+        <Button Click="escButton_Click" IsCancel="True" Width="0" Height="0"/>
+        <Image Source="C:\\Users\\alex5\\source\\repos\\WPF\\WPF\\images\\slava.png" Width="250" Height="50"/>
+        <TextBlock x:Name="textBlock" FontWeight="Bold" Text="Введіть висоту поля (від 5 до 50)" HorizontalAlignment="Center" Height="30"/>
+        <TextBox x:Name="textBoxHeight" Height="20"/>
+        <Button x:Name="heightApprovalButton" IsDefault="True" Content="Відправити" Click="DataApprovalButtonClick" Background="White" Height="20"/>
+        <Image Source="C:\\Users\\alex5\\source\\repos\\WPF\\WPF\\images\\heroyam.png" Width="250" Height="60"/>
+    </StackPanel>
+</Window>
